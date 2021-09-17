@@ -264,3 +264,27 @@ h3 {
 #hideTheBox {
     display: none;
 }
+
+#skills {
+    width: 100vw;
+    height: auto;
+}
+
+#langImgContainer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#langImgContainer img {
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 20vw;
+    transition: all 0.3s linear;
+}
+
+#langImgContainer img:hover {
+    transform: scale(1.15);
+}
