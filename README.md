@@ -13,6 +13,7 @@ This is a website that displays a bit of information about myself, my skills, my
 * [ColorHunt](https://colorhunt.co/) (for color pallete)
 * [Steven Stromick](https://codepen.io/sstromick/pen/KKwQbrx) (CSS rotate animation in navbar)
 * [LiceCap](https://www.cockos.com/licecap/) (to easily record gifs)
+* [Pixelmator](https://www.pixelmator.com/pro/) (image editing + cropping)
 * [Meyer Web reset.css file](https://meyerweb.com/eric/tools/css/reset/)
 
 ## Notable Stuff
