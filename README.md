@@ -2,7 +2,7 @@
 
 This is a website that displays a bit of information about myself, my skills, my projects, as well as my contact information.
 
-![Image](./assets/siteDemo.gif)
+![Image](./assets/images/siteDemo.gif)
 
 ## Built With
 
