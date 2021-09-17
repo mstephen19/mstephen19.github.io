@@ -6,7 +6,7 @@ html, body {
 
 /*gradient*/
 body {
-    background: linear-gradient(-50deg, #FFEF78, #98DDCA, #D5ECC2, #FFD3B4, rgb(205, 235, 205), #610094, #FFAAA7, rgb(181, 206, 214), rgb(24, 24, 24));
+    background: linear-gradient(-50deg, rgb(181, 206, 214), rgb(205, 235, 205), #FFEF78, #98DDCA, #D5ECC2, #FFD3B4, #FFAAA7, #c69bdd, rgb(24, 24, 24));
     background-size: 450% 450%;
     animation: moving 18s ease-in-out infinite;
 }
@@ -309,7 +309,7 @@ li:active {
 
 #contactImages {
     width: 100vw;
-    height: 20vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;

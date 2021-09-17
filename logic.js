@@ -1,8 +1,10 @@
 //display hidden div when mouseover corresponding button, then hide it on mouseout
+//for onmouseover event
 const pwGenBtn = document.getElementById('pwGen');
 pwGenBtn.onmouseover = function(){
     document.getElementById('hidepwGen').style.display = 'block';
 }
+//when onmouseout
 pwGenBtn.onmouseout = function(){
     document.getElementById('hidepwGen').style.display = 'none';
 }

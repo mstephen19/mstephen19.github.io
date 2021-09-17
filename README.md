@@ -12,9 +12,10 @@ This is a website that displays a bit of information about myself, my skills, my
 * [Google Fonts](https://fonts.google.com/specimen/Josefin+Sans#glyphs) (Josefin Sans font)
 * [ColorHunt](https://colorhunt.co/) (for color pallete)
 * [Steven Stromick](https://codepen.io/sstromick/pen/KKwQbrx) (CSS rotate animation in navbar)
+* [LiceCap](https://www.cockos.com/licecap/) (to easily record gifs)
 * [Meyer Web reset.css file](https://meyerweb.com/eric/tools/css/reset/)
 
-## Notable stuff
+## Notable Stuff
 
 ### Javascript logic used to display fixed image preview on screen during hover event on list item:
 
