@@ -1,65 +1,83 @@
-# Project Title
+# Matt's Portfolio **([Link](https://mstephen19.github.io))**
 
-One paragraph of project description goes here.
+This is a website that displays a bit of information about myself, my skills, my projects, as well as my contact information.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development environment running.
-
-Say what the step will be:
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
+![Image](./assets/siteDemo.gif)
 
 ## Built With
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Google Fonts](https://fonts.google.com/specimen/Josefin+Sans#glyphs) (Josefin Sans font)
+* [ColorHunt](https://colorhunt.co/) (for color pallete)
+* [Steven Stromick](https://codepen.io/sstromick/pen/KKwQbrx) (CSS rotate animation in navbar)
+* [Meyer Web reset.css file](https://meyerweb.com/eric/tools/css/reset/)
+
+## Notable stuff
+
+### Javascript logic used to display fixed image preview on screen during hover event on list item:
+
+``` Javascript
+const refactorBtn = document.getElementById('refactor');
+refactorBtn.onmouseover = function(){
+    document.getElementById('hideRefactor').style.display = 'block';
+}
+refactorBtn.onmouseout = function(){
+    document.getElementById('hideRefactor').style.display = 'none';
+}
+```
+
+``` CSS
+.hidden {
+    position: fixed;
+    top: 50%;
+    left: 1%;
+}
+
+.hidden img {
+    max-height: 40vh;
+    position: absolute;
+    bottom: 0;
+    border-radius: 4px;
+    border: 2px solid red;
+}
+
+#hideRefactor {
+    display: none;
+}
+```
+
+### CSS gradient + animation in order to achieve gradient background:
+``` CSS
+body {
+    background: linear-gradient(-50deg, #FFEF78, #98DDCA, #D5ECC2, #FFD3B4, rgb(205, 235, 205), #610094, #FFAAA7, rgb(181, 206, 214), rgb(24, 24, 24));
+    background-size: 450% 450%;
+    animation: moving 18s ease-in-out infinite;
+}
+
+@keyframes moving {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+```
 
 ## Deployed Link
 
-* [See Live Site](#)
+* [Live Site Here](https://mstephen19.github.io)
+
+## Author
+
+**Matt Stephens** 
+
+- [Link to Portfolio Site](https://mstephen19.github.io)
+- [Link to Github](https://github.com/mstephen19)
+- [Link to LinkedIn](https://www.linkedin.com/mstephen19)
+
+### Acknowledgments
+
+* Hat tip to Shawn Beaton. [His old website](https://beat0154.github.io/shawnbeatonV4/) slightly inspired this one.
+* Shoutout to [Jesse Lewis](https://www.linkedin.com/in/jesseaustinlewis/) for teaching me his ways of FlexBox
 
 
-## Authors
-
-* **YOUR NAME** 
-
-- [Link to Portfolio Site](#)
-- [Link to Github](https://github.com/)
-- [Link to LinkedIn](https://www.linkedin.com/)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License 
-
-## Acknowledgments
-
-* Hat tip to anyone whose code, libraries, packages, or UI was used  / inspired from
-* Inspiration
-* etc
