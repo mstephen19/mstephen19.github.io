@@ -17,37 +17,63 @@
         <div id="nameBox"><h1>Matt Stephens</h1></div>
         <nav>
             <div id="navBox">
-                <button><a href="#headerSpace">Portfolio</a></button>
-                <button>About</button>
+                <button><a href="#aboutProjects">Portfolio</a></button>
+                <button><a href="#aboutMeImage">About</a></button>
                 <button>Skills</button>
                 <button>Contact</button>
             </div>
         </nav>
     </header>
     <div id="headerSpace"></div>
+    <section id="about">
+        <div id="aboutMeImage">
+            <h3>Hey! I'm Matt!</h3>
+            <img id="me" src="./assets/imageme.png">
+            <p>
+                I've been programming for a few months now, and am absolutely loving it!
+                I really enjoy creating new things, finding solutions to problems, and
+                fleshing out new ideas.
+            </p>
+        </div>
+    </section>
     <section id="portfolio-links">
         <ul>
             <h2>My Portfolio</h2>
             <div id="line"></div>
             <a href="https://mstephen19.github.io/CoolPasswordGenerator/" target="_blank">
-                <li>Password Generator</li>
+                <li id="pwGen">Password Generator</li>
             </a>
             <a href="https://mstephen19.github.io/bcb-hw-1/" target="_blank">
-                <li>Code Refactor</li>
+                <li id="refactor">Code Refactor</li>
             </a>
             <a href="https://github.com/mstephen19/omegleChatBot" target="_blank">
-                <li>ChatBot</li>
+                <li id="chatbot">ChatBot</li>
             </a>
-            <a href="https://mstephen19.github.io/bcb-hw-1/" target="_blank">
+            <a href="https://mstephen19.github.io/TheBox/" target="_blank">
                 <li id="firstProject">The Box<p>(First Project)</p></li>
             </a>
         </ul>
     </section>
-    <section id="about">
-        <div id="about-header-container">
-            <h2>About Me & My Projects</h2>
+    <!--elements activated by js onmouseover-->
+    <div id="hidepwGen" class="hidden">
+        <img src="assets/pwgen.gif">
+    </div>
+    <div id="hideRefactor" class="hidden">
+        <img src="assets/horiseon.gif">
+    </div>
+    <div id="hideChatBot" class="hidden">
+        <img src="assets/chatbot.gif">
+    </div>
+    <div id="hideTheBox" class="hidden">
+        <img src="assets/thebox.gif">
+    </div>
+    <!---->
+    <section id="skills">
+        <div id="title-container">
+            <h2 id="mySkills">My Skills</h2>
             <div id="line"></div>
         </div>
     </section>
+    <script type="text/javascript" src="logic.js"></script>
 </body>
 </html>

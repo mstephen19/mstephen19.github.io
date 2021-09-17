@@ -8,9 +8,9 @@ html, body {
 
 /*gradient*/
 body {
-    background: linear-gradient(-50deg, #98DDCA, #D5ECC2, #FFD3B4, #FFAAA7, rgb(24, 24, 24));
+    background: linear-gradient(-50deg, #98DDCA, #D5ECC2, #FFD3B4, rgb(205, 235, 205), #FFAAA7, rgb(181, 206, 214), rgb(24, 24, 24));
     background-size: 400% 400%;
-    animation: moving 13s ease-in-out infinite;
+    animation: moving 20s ease-in-out infinite;
 }
 
 /*gradient animation*/
@@ -22,7 +22,7 @@ body {
 
 header {
     height: 75px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     display: flex;
     align-items: center;
@@ -195,15 +195,72 @@ li:active {
 
 #about {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-#about-header-container{
-    width: 100%;
-    height: 60px;
+#title-container{
+    width: 100vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: green;
+}
+
+#aboutMeImage {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#me {
+    width: 35vw;
+}
+
+h3 {
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    font-size: 70px;
+    text-shadow: -2px 2px 0px rgba(54, 54, 54, 0.4);
+    cursor: default;
+    width: 75vw;
+}
+
+#aboutMeImage p {
+    font-size: 25px;
+}
+
+.hidden {
+    position: fixed;
+    top: 50%;
+    left: 1%;
+}
+
+.hidden img {
+    max-height: 40vh;
+    position: absolute;
+    bottom: 0;
+    border-radius: 4px;
+    border: 2px solid red;
+}
+
+/*very repetitive here only for javascript purposes*/
+#hidepwGen {
+    display: none;
+}
+
+#hideRefactor {
+    display: none;
+}
+
+#hideChatBot {
+    display: none;
+}
+
+#hideTheBox {
+    display: none;
 }
