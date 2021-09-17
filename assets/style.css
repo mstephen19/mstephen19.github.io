@@ -13,7 +13,7 @@ body {
     animation: moving 20s ease-in-out infinite;
 }
 
-/*gradient animation*/
+/*bakground gradient animation - moves 400%x400% background around 100%x100% space*/
 @keyframes moving {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
@@ -115,9 +115,43 @@ button:active {
 /*serves as blank space where the fixed header sits. prevents issues with section*/
 #headerSpace {
     height: 75px;
-    width: 100%;
+    width: 100vw;
 }
 
+/*About section*/
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#aboutMeImage {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#me {
+    width: 35vw;
+}
+
+h3 {
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    font-size: 70px;
+    text-shadow: -2px 2px 0px rgba(54, 54, 54, 0.4);
+    cursor: default;
+    width: 75vw;
+}
+
+#aboutMeImage p {
+    font-size: 25px;
+}
+
+/*Portfolio section*/
 #portfolio-links {
     width: 100%;
     height: 450px;
@@ -136,6 +170,16 @@ h2 {
     cursor: default;
 }
 
+#title-container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Don't want to use hr tag*/
 #line {
     width: 70vw;
     height: 2px;
@@ -184,56 +228,16 @@ li p {
 }
 
 li:hover {
+    font-weight: bold;
     background: rgba(122, 120, 120, 0.4);
     transform: scale(1.03);
-    font-weight: bold;
 }
 
 li:active {
     transform: scale(0.95);
 }
 
-#about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#title-container{
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#aboutMeImage {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#me {
-    width: 35vw;
-}
-
-h3 {
-    text-align: center;
-    display: block;
-    font-weight: 500;
-    font-size: 70px;
-    text-shadow: -2px 2px 0px rgba(54, 54, 54, 0.4);
-    cursor: default;
-    width: 75vw;
-}
-
-#aboutMeImage p {
-    font-size: 25px;
-}
-
+/*Hidden gifs*/
 .hidden {
     position: fixed;
     top: 50%;
@@ -265,6 +269,7 @@ h3 {
     display: none;
 }
 
+/*Skills section*/
 #skills {
     width: 100vw;
     height: auto;
@@ -274,6 +279,7 @@ h3 {
     width: 100vw;
     height: auto;
     display: flex;
+    padding-bottom: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -282,11 +288,57 @@ h3 {
     margin-left: 25px;
     margin-right: 25px;
     max-width: 20vw;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
 }
 
 #langImgContainer img:hover {
     transform: scale(1.15);
+}
+
+#langImgContainer img:active {
+    transform: scale(0.85);
+}
+
+/*Contact section*/
+#contactMe {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactImages {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactImages img {
+    width: 10vw;
+    border-radius: 25px;
+    transition: all 0.2s linear;
+}
+
+#contactImages img:hover {
+    background-color: #98DDCA;
+    transform: scale(1.1) rotate(10deg);
+}
+
+#contactImages img:active {
+    background-color: black;
+    transform: scale(0.95) rotate(0deg);
+}
+
+/*flex container for imgs*/
+#imagesContainer {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
 }
 
 footer {
@@ -300,3 +352,187 @@ footer {
     box-shadow: 0px -15px 40px rgba(54, 54, 54, 0.4);
     text-shadow: -1px 1px 3px rgba(54, 54, 54, 0.4);
 }
+
+/*mobile overrides*/
+@media screen and (max-width: 992px) {
+    body {
+        background: white;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+        background: orange;
+    }
+    /*header + navbar*/
+    nav {
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    #navBox {
+        flex: 1 1 100vw;
+        margin-top: 75px;
+        flex-wrap: wrap;
+    }
+    button{
+        flex: 1 1 20%;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 18px;
+
+    }
+    button:hover {
+        border: none;
+        box-shadow: none;
+        animation: none;
+        text-shadow: -1px 1px 3px rgba(54, 54, 54, 0.4);
+        font-weight: 500;
+    }
+    button:active {
+        box-shadow: 0 0 10px rgb(24, 24, 24);
+        border: 1px solid #FFAAA7;
+        background: rgb(24, 24, 24);
+        color: #FFAAA7;
+    }
+    #headerSpace {
+        height: 150px;
+    }
+    /*about section*/
+    h3 {
+        flex-wrap: wrap;
+        font-size: 40px;
+        width: 100vw;
+    }
+    #aboutMeImage {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    #me {
+        width: 60vw;
+    }
+    /*portfolio section*/
+    li {
+        width: 90vw;
+    }
+    #firstProject {
+        width: 90vw;
+    }
+    .hidden {
+        display: none;
+    }
+    /*resetting hover, impossible to hover on a phone*/
+    li:hover {
+        background: none;
+        transform: scale(1.00);
+        font-weight: 500;
+    }
+    /*changing active to make it more responsive feeling*/
+    li:active {
+        font-weight: bold;
+        background: rgba(122, 120, 120, 0.4);
+        transform: scale(0.95);
+    }
+    /*skills section*/
+    #langImgContainer img {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /*contact section*/
+    #contactImages img {
+        width: 20vw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #contactImages img:hover {
+        background-color: none;
+        transform: scale(1.0) rotate(0deg);
+    }
+    #contactImages img:active {
+        background-color: #98DDCA;
+        transform: scale(0.95) rotate(-10deg);
+    }
+}
+
+  /*
+  header {
+    height: 75px;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#nameBox {
+    flex: 0 0 285px;
+    width: 25vw;
+    height: 55px;
+    background-color: #98DDCA;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 40px rgba(54, 54, 54, 0.4);
+}
+
+h1 {
+    flex: 1 0 25vw;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(24, 24, 24);
+    text-shadow: -3px 3px 0px rgba(54, 54, 54, 0.4);
+    cursor: default;
+}
+
+nav {
+    height: 75px;
+    width: 75vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+#navBox {
+    flex: 0 1 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    width: 50vw;
+    background-color: #98DDCA;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0px 15px 40px rgba(54, 54, 54, 0.4);
+}
+
+button{
+    flex: 0 1 20%;
+    height: 35px;
+    width: 20%;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    background: #FFAAA7;
+    font-weight: 500;
+    color: rgb(24, 24, 24);
+    text-shadow: -1px 1px 3px rgba(54, 54, 54, 0.4);
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid rgb(24, 24, 24);
+    box-shadow: 0 0 10px rgb(24, 24, 24);
+    animation: rotate 0.4s linear infinite;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+button:active {
+    border: 1px solid #FFAAA7;
+    background: rgb(24, 24, 24);
+    color: #FFAAA7;
+}
+*/
