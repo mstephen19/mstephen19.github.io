@@ -32,3 +32,19 @@ theBoxBtn.onmouseover = function(){
 theBoxBtn.onmouseout = function(){
     document.getElementById('hideTheBox').style.display = 'none';
 }
+
+//Change opacity of navbar based on scroll position.
+setInterval (function scrollAction(){
+    if (/*document.body.scrollTop*/window.scrollY >= 100)  {
+        const nameBox = document.getElementById('nameBox');
+        const navBox = document.getElementById('navBox');
+        nameBox.style.opacity = "50%";
+        navBox.style.opacity = "50%";
+    }
+    else {
+        nameBox.style.opacity = "100%";
+        navBox.style.opacity = "100%";
+    }
+}), 10;
+
+window.addEventListener('scroll', scrollAction());
