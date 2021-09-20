@@ -35,7 +35,7 @@ theBoxBtn.onmouseout = function(){
 
 //Change opacity of navbar based on scroll position.
 setInterval (function scrollAction(){
-    if (/*document.body.scrollTop*/window.scrollY >= 100)  {
+    if (window.scrollY >= 100)  {
         const nameBox = document.getElementById('nameBox');
         const navBox = document.getElementById('navBox');
         nameBox.style.opacity = "50%";
@@ -45,6 +45,14 @@ setInterval (function scrollAction(){
         nameBox.style.opacity = "100%";
         navBox.style.opacity = "100%";
     }
+    /* trying to make box back to solid when hover but it's broken
+    nameBox.onmouseover = function(){
+        nameBox.style.opacity = "100%";
+        navBox.style.opacity = "100%";
+    }
+    */
 }), 10;
 
+/* not necessary anymore because using interval of 10ms instead
 window.addEventListener('scroll', scrollAction());
+*/
