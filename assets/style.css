@@ -485,6 +485,10 @@ footer {
             background-color: #98DDCA;
             transform: scale(0.95) rotate(-10deg);
         }
+        #backToTop {
+            font-size: 10px;
+            padding: 5px;
+        }
     }
   
   @media screen and (max-width: 768px) {
@@ -574,5 +578,9 @@ footer {
     #contactImages img:active {
         background-color: #98DDCA;
         transform: scale(0.95) rotate(-10deg);
+    }
+    #backToTop {
+        font-size: 10px;
+        padding: 5px;
     }
 }
