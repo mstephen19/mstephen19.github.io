@@ -8,16 +8,16 @@
     <meta name="description" content="Matt Stephens Portfolio and About Me page.">
     <meta name="keywords" content="web development, portfolio, web dev, mstephen19, matt stephens, developer, junior dev, software">
     <meta name="author" content="Matt Stephens">
-    <link rel="icon" href="favicon.ico">
     <!--google api for font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="icon.png">
     <title>Matt Stephens - Developer Portfolio</title>
 </head>
-<body>
+<body id="top">
     <header>
         <!--to left-->
         <div id="nameBox"><h1>Matt Stephens</h1></div>
@@ -51,6 +51,9 @@
             <a href="https://mstephen19.github.io/CoolPasswordGenerator/" target="_blank">
                 <li id="pwGen">Password Generator</li>
             </a>
+            <a href="https://mstephen19.github.io/BCBPWGEN/" target="_blank">
+                <li id="pwGen2">Password Generator 2.0</li>
+            </a>
             <a href="https://github.com/mstephen19/omegleChatBot" target="_blank">
                 <li id="chatbot">ChatBot</li>
             </a>
@@ -63,6 +66,9 @@
         </ul>
     </section>
     <!--elements activated by js onmouseover-->
+    <div id="hidepwGen2" class="hidden">
+        <img src="./assets/images/pwgen2.gif" alt="Password Generator 2.0 Web-App demonstration.">
+    </div>
     <div id="hidepwGen" class="hidden">
         <img src="./assets/images/pwgen.gif" alt="Password Generator Web-App demonstration.">
     </div>
@@ -103,6 +109,7 @@
 <footer>
     <p>Made with ❤</p>
     <p>© Matt Stephens 2021</p>
+    <p id="backToTop"><a href="#top">Back to Top</a></p>
 </footer>
     <script type="text/javascript" src="logic.js"></script>
 </body>

@@ -33,6 +33,14 @@ theBoxBtn.onmouseout = function(){
     document.getElementById('hideTheBox').style.display = 'none';
 }
 
+const pwGen2Btn = document.getElementById('pwGen2');
+pwGen2Btn.onmouseover = function(){
+    document.getElementById('hidepwGen2').style.display = 'block';
+}
+pwGen2Btn.onmouseout = function(){
+    document.getElementById('hidepwGen2').style.display = 'none';
+}
+
 //Change opacity of navbar based on scroll position.
 setInterval (function scrollAction(){
     if (window.scrollY >= 100)  {
