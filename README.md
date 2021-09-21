@@ -4,6 +4,9 @@ This is a website that displays a bit of information about myself, my skills, my
 
 ![Image](./assets/images/siteDemo.gif)
 
+## Original WireFrame
+![Image](./assets/images/wireframe.jpeg)
+
 ## Built With
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -81,5 +84,3 @@ body {
 
 * Hat tip to Shawn Beaton. [His old website](https://beat0154.github.io/shawnbeatonV4/) slightly inspired this one.
 * Shoutout to [Jesse Lewis](https://www.linkedin.com/in/jesseaustinlewis/) for teaching me his ways of FlexBox
-
-

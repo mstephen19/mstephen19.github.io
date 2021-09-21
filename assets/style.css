@@ -318,7 +318,7 @@ li:active {
 
 #contactImages {
     width: 100vw;
-    height: 25vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,7 +334,7 @@ li:active {
 
 #contactImages img {
     width: 10vw;
-    border-radius: 25px;
+    border-radius: 30px;
     transition: all 0.2s linear;
 }
 
@@ -346,6 +346,41 @@ li:active {
 #contactImages img:active {
     background-color: black;
     transform: scale(0.95) rotate(0deg);
+}
+
+/*phone number section*/
+#phone {
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dispPhone {
+    font-size: 20px;
+    padding: 10px;
+    background: #98DDCA;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 rgb(24, 24, 24);
+    cursor: grab;
+}
+
+#dispPhone:active {
+    box-shadow: 0 2px 0 rgb(24, 24, 24);
+    transform: translate(0px, 3px);
+}
+
+#phoneNum {
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    font-size: 30px;
+    text-shadow: -3px 3px 0px rgba(54, 54, 54, 0.4);
+    margin-bottom: 5px;
+    cursor: default;
+    text-shadow: -1px 1px 3px rgba(54, 54, 54, 0.4);
+    display: none;
 }
 
 /*made with love + copyright*/
@@ -369,12 +404,12 @@ footer {
     padding: 10px;
     background-color: #FFAAA7;
     box-shadow: -2px -5px 0 rgb(24, 24, 24);
+    text-shadow: -1px 1px 3px rgba(54, 54, 54, 0.4);
     border-radius: 4px;
     cursor: grab;
 }
 
 #backToTop:active {
-    background-color: #FFAAA7;
     box-shadow: -1px -2px 0 rgb(24, 24, 24);
     border-radius: 4px;
     transform: translate(-1px, -3px);

@@ -64,3 +64,9 @@ setInterval (function scrollAction(){
 /* not necessary anymore because using interval of 10ms instead
 window.addEventListener('scroll', scrollAction());
 */
+
+//phone number btn
+document.getElementById('dispPhone').addEventListener('click', function(){
+    document.getElementById('dispPhone').style.display = "none"
+    document.getElementById('phoneNum').style.display = "inline-block"
+})
